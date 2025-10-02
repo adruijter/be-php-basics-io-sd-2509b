@@ -74,7 +74,17 @@
         echo "<li>$games[4]</li>";
         echo "</ol>";
 
+        // Dit is een associatief array 
+        $persoonsgegevens = [
+            'voornaam' => 'Arjan',
+            'tussenvoegsel' => 'de',
+            'achternaam' => 'Ruijter',
+            'leeftijd' => 57
+        ];
 
+        echo "<p>Mijn naam is: {$persoonsgegevens['voornaam']} 
+                    {$persoonsgegevens['tussenvoegsel']} 
+                            {$persoonsgegevens['achternaam']}</p>";
         
 
 
