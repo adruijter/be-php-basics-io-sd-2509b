@@ -9,5 +9,15 @@
 </head>
 <body>
     <h2>Datatypen met PHP</h2>
+
+    <?php
+        // Hieronder staat een string variabele
+        $sport = 'Voetbal';
+        echo "<p>Mijn sport is $sport</p>";
+
+        $snack = "bitterbal";
+        echo "<p>Mijn favoriete snack is $snack</p>";
+    ?>
+
 </body>
 </html>
