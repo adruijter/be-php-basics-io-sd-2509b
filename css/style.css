@@ -2,3 +2,7 @@ body {
    font-family:Verdana;
    background-color: rgb(207, 233, 255);
 }
+
+#rood {
+   color: red;
+}
