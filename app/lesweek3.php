@@ -79,12 +79,29 @@
             'voornaam' => 'Arjan',
             'tussenvoegsel' => 'de',
             'achternaam' => 'Ruijter',
+            'straatnaam' => 'Prins Hendrikstraat',
+            'straatnummer' => 59,
+            'woonplaats' => 'Utrecht',
+            'postcode' => '1051 XM',
             'leeftijd' => 57
         ];
 
-        echo "<p>Mijn naam is: {$persoonsgegevens['voornaam']} 
-                    {$persoonsgegevens['tussenvoegsel']} 
-                            {$persoonsgegevens['achternaam']}</p>";
+        echo "<p>Mijn naam is: {$persoonsgegevens['voornaam']} {$persoonsgegevens['tussenvoegsel']} {$persoonsgegevens['achternaam']}</p>";
+        echo "<p>Ik woon in de: {$persoonsgegevens['straatnaam']} {$persoonsgegevens['straatnummer']}</p>";
+        echo "<p>In de stad: {$persoonsgegevens['woonplaats']} {$persoonsgegevens['postcode']}</p>";
+        echo "<p>Ik ben {$persoonsgegevens['leeftijd']} jaar oud</p>";
+
+
+        // Maak een associatief array met de top 5 snelste auto's ter wereld
+        $snelle_auto = [
+            'Koenigsegg Jesko Absolut' => 499,
+            'Yangwang U9 Xtreme' => 496,
+            'SSC Tuatara' => 295,
+            'Bugatti W16 Mistral Roadster' => 282,
+            'Czinger 21C V Max' => 281
+        ];
+
+        
         
 
 
