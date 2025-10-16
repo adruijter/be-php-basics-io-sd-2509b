@@ -137,12 +137,6 @@
         echo "<p>schoen 7: Reebok => &euro; {$sneakers['Reebok']}</p>";
         echo "<p>schoen 8: Converse &euro; {$sneakers['Converse']}</p>";
 
-
-
-
-
-
-
     ?>
 
 </body>
