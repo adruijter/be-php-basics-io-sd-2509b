@@ -20,6 +20,9 @@
         <li>
             <a href="app/lesweek7.php">Loops in PHP</a>
         </li>
+        <li>
+            <a href="app/lesweek8.php">Controlestructuren in PHP</a>
+        </li>
     </ol>
 
 </body>
