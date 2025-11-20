@@ -24,18 +24,27 @@
         // echo "<p>Mijn naam is: $voornaam_1 $tussenvoegsel_1 $achternaam_1</p>";
 
 
-        function volledigeNaam($voornaam, $tussenvoegsel, $achternaam, $geboortedatum)
-        {
+        function volledigeNaam(
+            $voornaam, 
+            $tussenvoegsel, 
+            $achternaam, 
+            $geboortedatum, 
+            $adres,
+            $huisnummer,
+            $postcode,
+            $woonplaats
+        ) {
            echo "<p>Mijn volledige naam is: $voornaam $tussenvoegsel $achternaam</p>
-                 <p>Mijn geboortedatum is: $geboortedatum</p><hr>"; 
+                 <p>Mijn geboortedatum is: $geboortedatum</p>
+                 <p>Mijn adres is: $adres $huisnummer, $postcode $woonplaats</p><hr>"; 
         }
 
-        volledigeNaam('Arjan', 'de', 'Ruijter', '30-08-1968');
-        volledigeNaam('Youssef', '', 'Saidi', '20-01-2000');
-        volledigeNaam('Imrani', 'El', 'Walid', '12-03-2002');
-
-
-        
+        volledigeNaam('Arjan', 'de', 'Ruijter', '30-08-1968', 
+                      'Waalstraat', 17, '1901CB', 'Utrecht');
+        volledigeNaam('Youssef', '', 'Saidi', '20-01-2000', 
+                      'Testweg', 20, '2023BN', 'Utrecht');
+        volledigeNaam('Imrani', 'El', 'Walid', '12-03-2002', 
+                      'Gladiolenstraat', 34, '1203VN', 'Amsterdam');   
 
     ?>
 </body>
