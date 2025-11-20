@@ -23,6 +23,9 @@
         <li>
             <a href="app/lesweek8.php">Controlestructuren in PHP</a>
         </li>
+        <li>
+            <a href="app/functions.php">Functies in PHP</a>
+        </li>
     </ol>
 
 </body>
