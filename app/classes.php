@@ -12,29 +12,46 @@
     <h2>Klassen en Objecten</h2>
 
     <?php
-        // Hoe maak je class
+        // Hoe maak je een class
         class Persoon
         {
             public $voornaam;
             public $tussenvoegsel;
             public $achternaam;
+            public $geboortedatum;
+            public $adres;
+            public $huisnummer;
+            public $stad;
 
             // We gaan nu een constructor maken. Deze wordt automatisch aangeroepen wanneer je een object maakt.
-            public function __construct($voornaam, $tussenvoegsel, $achternaam)
-            {
+            public function __construct(
+                $voornaam, 
+                $tussenvoegsel, 
+                $achternaam, 
+                $geboortedatum,
+                $adres,
+                $huisnummer,
+                $stad
+            ) {
                 $this->voornaam = $voornaam;
                 $this->tussenvoegsel = $tussenvoegsel;
                 $this->achternaam = $achternaam;
+                $this->geboortedatum = $geboortedatum;
+                $this->adres = $adres;
+                $this->huisnummer = $huisnummer;
+                $this->stad = $stad;
             }
 
             public function volledigeNaam()
             {
-                echo "<p>Mijn volledige naam is: $this->voornaam $this->tussenvoegsel $this->achternaam</p><hr>";
+                return "<p>Mijn volledige naam is: $this->voornaam $this->tussenvoegsel $this->achternaam</p>
+                        <p>Mijn geboortedatum is: $this->geboortedatum</p>
+                        <p>Mijn adres is: $this->adres $this->huisnummer, $this->stad</p><hr>";
             }
         }
 
         // We maken een object van de klasse Persoon met het woordje new
-        $persoon1 = new Persoon('Bert', '', 'Versluis');
+        $persoon1 = new Persoon('Bert', '', 'Versluis', '12-02-2007', 'Planetenweg', 17, 'Amsterdam');
 
         // We stoppen een naam in de klasse-variabele voornaam
         // $persoon1->voornaam = 'Arjan';
@@ -45,11 +62,17 @@
         // echo $persoon1->voornaam;
         // echo $persoon1->achternaam;
 
-        $persoon1->volledigeNaam();
+        echo $persoon1->volledigeNaam();
 
         // We maken een nieuw object aan
-        $persoon2 = new Persoon('Sandra', 'van', 'Lent');
-        $persoon2->volledigeNaam();
+        $persoon2 = new Persoon('Sandra', 'van', 'Lent', '30-08-2005', 'Boomstraat', 20, 'Utrecht');
+        echo $persoon2->volledigeNaam();
+
+        // Opdracht breid de class uit met de geboortedatum zodat je als output krijgt van de volledigeNaam() functie:
+        // Mijn volledige naam is: Arjan de Ruijter
+        // Mijn geboortedatum is: 12-02-2008
+
+
 
 
 
