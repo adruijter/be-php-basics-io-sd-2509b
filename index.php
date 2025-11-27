@@ -26,6 +26,10 @@
         <li>
             <a href="app/functions.php">Functies in PHP</a>
         </li>
+        <li>
+            <a href="app/classes.php">Klassen en Objecten in PHP</a>
+        </li>
+
     </ol>
 
 </body>
